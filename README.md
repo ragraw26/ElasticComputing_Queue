@@ -4,9 +4,10 @@ The purpose of this problem is to learn how use linked lists and queues support 
 
 The steps will be follows:
 
-Requests arrive at a given rate r at the website entry point. The requests are immediately inserted into the incoming queue.
-The dispatcher picks a request for the incoming queue and adds it to one of the available services (running on one of the virtual machines). If all machines are maxed out then the dispatcher will request the addition of a new virtual machine to be added from the pool.
-A service will retrieve requests from the queue of waiting requests and process it. The processing time will be p.
+1) Requests arrive at a given rate r at the website entry point. The requests are immediately inserted into the incoming queue.
+2) The dispatcher picks a request for the incoming queue and adds it to one of the available services (running on one of the virtual machines). If all machines are maxed out then the dispatcher will request the addition of a new virtual machine to be added from the pool.
+3) A service will retrieve requests from the queue of waiting requests and process it. The processing time will be p.
+
 Our job is to simulate the load on the website and learn how many machines you need to handle a fluctuating load.
 
 We have designed a swing app that will allow you to vary the various parameters and see how the system behaves under different request arrival and processing rates. Also, you must incorporate total response time and its impact on the best scheduling strategy by the dispatcher (response time is time from when the user submits the request to the time the request is completed by the service).
